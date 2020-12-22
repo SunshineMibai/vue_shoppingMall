@@ -1,0 +1,91 @@
+
+*{
+   box-sizing: border-box;
+}
+
+
+$theme-active: #fc413c;//全局高亮样式
+$icon-color: #7d7e80;
+$icon-active-color: #fc413c;//字体高亮样式
+$yello-active: #FECA3A;//全局高亮黄色
+$theme-blue: #2f86f6;//蓝色按钮
+
+
+//全局高亮active
+.active-text {
+  color: $theme-active!important;
+}
+
+
+//返回顶部图片
+.mescroll-totop{
+   width: 50px!important;
+   height:50px!important;
+   border-radius: 50%;
+   padding: 8px;
+}
+.mescroll-fade-in{
+   background: $theme-active;
+}
+
+// 返回顶部按钮位置
+.mescroll-totop {
+   transition: all 0.5s linear!important;
+}
+.hide-top {
+   height: 0 !important;
+   padding: 0!important;
+   right: 30px !important;
+   width: 0!important;
+   bottom: 82px!important;
+}
+.mescroll-fade-in {
+   bottom: 120px!important;
+   padding:8px!important;
+   width: 50px !important;
+   height: 50px !important;
+   right: 10px !important;
+}
+
+
+
+//HACK
+button {
+   border: none;
+   border-radius: 5px;
+   outline: none;
+}
+button:active {
+   opacity: 0.5;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+input {
+  border: none;
+  outline: none;
+  -webkit-appearance: none; 
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.flex{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.flex-row{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+}
+.text-right{
+   text-align: right;
+}
+
+
+
+// 统一处理 组件库样式
+@import './mand-hack.scss';

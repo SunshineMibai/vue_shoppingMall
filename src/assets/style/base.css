@@ -1,0 +1,69 @@
+* { box-sizing: border-box; }
+
+.active-text { color: #fc413c !important; }
+
+.mescroll-totop { width: 50px !important; height: 50px !important; border-radius: 50%; padding: 8px; }
+
+.mescroll-fade-in { background: #fc413c; }
+
+.mescroll-totop { transition: all 0.5s linear !important; }
+
+.hide-top { height: 0 !important; padding: 0 !important; right: 30px !important; width: 0 !important; bottom: 82px !important; }
+
+.mescroll-fade-in { bottom: 120px !important; padding: 8px !important; width: 50px !important; height: 50px !important; right: 10px !important; }
+
+button { border: none; border-radius: 5px; outline: none; }
+
+button:active { opacity: 0.5; }
+
+input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset !important; }
+
+input { border: none; outline: none; }
+
+.flex { display: flex; justify-content: space-between; align-items: center; }
+
+.flex-row { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+
+.text-right { text-align: right; }
+
+.md-toast-content { display: flex !important; padding: 3.333vw 8vw; }
+
+.md-toast-content i { font-size: 24px !important; margin-right: 5px; }
+
+.md-toast-content .md-toast-text { margin-left: 0 !important; text-align: center; font-size: 14px !important; }
+
+.md-dialog-content { width: 280px; }
+
+.md-dialog-body { padding: 40px !important; }
+
+.md-dialog-body h2 { font-size: 16px; }
+
+.md-dialog-body div { font-size: 20px; }
+
+.md-dialog-actions a, .md-dialog-actions .md-dialog-btn:last-child { font-size: 16px; height: 50px; color: #fc413c; }
+
+.md-popup-box .column-item { font-size: 14px !important; }
+
+.md-popup-title-bar { height: 50px !important; }
+
+.md-popup-title-bar .title-bar-title { padding-top: 20px !important; }
+
+.md-popup-title-bar .div { padding-top: 20px !important; }
+
+.md-popup-title-bar div, .md-popup-title-bar p { font-size: 14px !important; }
+
+.md-popup-title-bar .md-popup-confirm { color: #fc413c !important; }
+
+.md-picker-column-item .column-list .column-item.active { color: #fc413c !important; }
+
+.md-field-item { height: 18px; }
+
+.md-field-item-content { padding: 0; min-height: 18px; }
+
+.md-field-item-content:before { border: none !important; }
+
+.md-field-item-right { font-size: 14px; }
+
+.md-field-item-right i { font-size: 18px !important; }
+
+.title-bar-left, .title-bar-right { padding-top: 20px !important; }

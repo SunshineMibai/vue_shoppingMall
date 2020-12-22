@@ -1,0 +1,15 @@
+.md-toast-content { display: flex !important; padding: 3.333vw 8vw; }
+
+.md-toast-content i { font-size: 24px !important; margin-right: 5px; }
+
+.md-toast-content .md-toast-text { margin-left: 0 !important; text-align: center; font-size: 14px !important; }
+
+.md-popup-box { width: 85%; }
+
+.md-dialog-content { width: 100%; }
+
+.md-dialog-body h2 { font-size: 16px; }
+
+.md-dialog-body div { font-size: 20px; }
+
+.md-dialog-actions a { font-size: 16px; height: 50px; }
