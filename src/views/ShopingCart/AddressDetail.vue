@@ -71,8 +71,9 @@ import { getAddressList,setAddressItem } from "@/service/user";
 export default class AddressDetail extends Vue {
   //   @Prop(String) readonly title!: string | "";
   @State("Common") stateCommon: any;
-  title: String = "";
-  codes: String = "测试";
+  title: string = "";
+  codes: string = "测试";
+  ress_text: string = "";
   userData: any = {
     ress_name:'',
     ress_mobile:'',
@@ -94,7 +95,9 @@ export default class AddressDetail extends Vue {
       const values = this.$refs.picker1.getColumnValues();
       let res = "";
       values.forEach((value: any) => {
+        console.log(value)
          value && (res += value.value);
+         this.ress_text += value.label
       });
       this.userData.ress_ressCode = res;
    }
@@ -160,7 +163,8 @@ export default class AddressDetail extends Vue {
       ress_detail:this.userData.ress_detail,//详细地址
       ress_type:this.userData.ress_type,//标签 1家 2公司 3学校
       ress_default:this.userData.ress_default,// 2默认 1非默认
-      ress_code:this.userData.ress_code || ''
+      ress_code:this.userData.ress_code || '',
+      ress_text:this.userData.ress_detail + this.ress_text
     }
     this.setAddressItem(req)
   }
@@ -168,6 +172,7 @@ export default class AddressDetail extends Vue {
     
   }
   setAddressItem(req:any) {
+    console.log(this.userData.ress_code)
     setAddressItem(req).then((res:any) => {
       (<any>window).utils.ui.Title(res.responseMsg)
       if(res.responseCode == 1000) {
